@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Умный склад - Главная</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-warehouse"></i>
+                <span>Умный склад</span>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html" class="active">Главная</a></li>
+                    <li><a href="products.html">Товары</a></li>
+                    <li><a href="inventory.html">Инвентаризация</a></li>
+                    <li><a href="suppliers.html">Поставщики</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <h1>Управляйте своим складом эффективно</h1>
+                <p>Автоматизация учета товаров, контроль остатков и аналитика в одном решении</p>
+                <button class="btn btn-primary" id="start-btn">Начать работу</button>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2>Наши возможности</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-boxes"></i>
+                        <h3>Учет товаров</h3>
+                        <p>Полный контроль над всеми товарами на складе</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-search"></i>
+                        <h3>Инвентаризация</h3>
+                        <p>Быстрая и точная проверка остатков</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-truck"></i>
+                        <h3>Поставщики</h3>
+                        <p>Управление поставками и заказами</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats">
+            <div class="container">
+                <div class="stat-item">
+                    <span class="stat-number" id="products-count">0</span>
+                    <span class="stat-label">Товаров в системе</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="suppliers-count">0</span>
+                    <span class="stat-label">Поставщиков</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Умный склад</h3>
+                    <p>Решение для автоматизации складского учета</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p>up455@gmail.com</p>
+                    <p>+7 (917) 777-77-77</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Быстрые ссылки</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="products.html">Товары</a></li>
+                        <li><a href="inventory.html">Инвентаризация</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Умный склад</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

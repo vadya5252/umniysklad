@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Умный склад - Поставщики</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-warehouse"></i>
+                <span>Умный склад</span>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="products.html">Товары</a></li>
+                    <li><a href="inventory.html">Инвентаризация</a></li>
+                    <li><a href="suppliers.html" class="active">Поставщики</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="page-header">
+            <div class="container">
+                <h1>Поставщики</h1>
+                <div class="page-actions">
+                    <button class="btn btn-primary" id="add-supplier-btn">
+                        <i class="fas fa-plus"></i> Добавить поставщика
+                    </button>
+                    <div class="search-box">
+                        <input type="text" placeholder="Поиск поставщиков...">
+                        <button class="btn btn-search"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="suppliers-grid" id="suppliers-list">
+                    <!-- Поставщики будут загружены через JS -->
+                </div>
+
+                <div class="orders-section">
+                    <h2>Последние заказы</h2>
+                    <div class="table-responsive">
+                        <table class="orders-table">
+                            <thead>
+                                <tr>
+                                    <th>№ заказа</th>
+                                    <th>Поставщик</th>
+                                    <th>Дата</th>
+                                    <th>Сумма</th>
+                                    <th>Статус</th>
+                                    <th>Действия</th>
+                                </tr>
+                            </thead>
+                            <tbody id="orders-list">
+                                <!-- Заказы будут загружены через JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Модальное окно добавления поставщика -->
+    <div class="modal" id="add-supplier-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Добавить нового поставщика</h2>
+            <form id="supplier-form">
+                <div class="form-group">
+                    <label for="supplier-name">Название компании</label>
+                    <input type="text" id="supplier-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="supplier-contact">Контактное лицо</label>
+                    <input type="text" id="supplier-contact" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="supplier-phone">Телефон</label>
+                        <input type="tel" id="supplier-phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="supplier-email">Email</label>
+                        <input type="email" id="supplier-email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="supplier-categories">Категории товаров</label>
+                    <select id="supplier-categories" multiple>
+                        <option value="Электроника">Электроника</option>
+                        <option value="Мебель">Мебель</option>
+                        <option value="Канцелярия">Канцелярия</option>
+                        <option value="Упаковка">Упаковка</option>
+                        <option value="Другое">Другое</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="supplier-address">Адрес</label>
+                    <textarea id="supplier-address" rows="3"></textarea>
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="btn btn-secondary close-modal">Отмена</button>
+                    <button type="submit" class="btn btn-primary">Сохранить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Умный склад</h3>
+                    <p>Решение для автоматизации складского учета</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p>up455@gmail.com</p>
+                    <p>+7 (917) 777-77-77</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Быстрые ссылки</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="products.html">Товары</a></li>
+                        <li><a href="inventory.html">Инвентаризация</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Умный склад</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

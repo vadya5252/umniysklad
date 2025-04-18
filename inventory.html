@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Умный склад - Инвентаризация</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-warehouse"></i>
+                <span>Умный склад</span>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="products.html">Товары</a></li>
+                    <li><a href="inventory.html" class="active">Инвентаризация</a></li>
+                    <li><a href="suppliers.html">Поставщики</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="page-header">
+            <div class="container">
+                <h1>Инвентаризация</h1>
+                <div class="page-actions">
+                    <button class="btn btn-primary" id="new-inventory-btn">
+                        <i class="fas fa-plus"></i> Новая инвентаризация
+                    </button>
+                    <div class="filter-actions">
+                        <select class="filter-select">
+                            <option>Все статусы</option>
+                            <option>Запланирована</option>
+                            <option>В процессе</option>
+                            <option>Завершена</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="inventory-cards" id="current-inventories">
+                    <!-- Текущие инвентаризации будут загружены через JS -->
+                </div>
+
+                <div class="history-section">
+                    <h2>История инвентаризаций</h2>
+                    <div class="table-responsive">
+                        <table class="history-table">
+                            <thead>
+                                <tr>
+                                    <th>№</th>
+                                    <th>Дата</th>
+                                    <th>Ответственный</th>
+                                    <th>Товаров</th>
+                                    <th>Расхождения</th>
+                                    <th>Статус</th>
+                                </tr>
+                            </thead>
+                            <tbody id="inventory-history">
+                                <!-- История инвентаризаций будет загружена через JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Умный склад</h3>
+                    <p>Решение для автоматизации складского учета</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p>up455@gmail.com</p>
+                    <p>+7 (917) 777-77-77</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Быстрые ссылки</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="products.html">Товары</a></li>
+                        <li><a href="inventory.html">Инвентаризация</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Умный склад</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
